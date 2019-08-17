@@ -1,0 +1,12 @@
+from selenium import webdriver
+from selenium.common.exceptions import TimeoutException
+
+#r'D:\迅雷下载\chromedriver_win32 (1)\chromedriver.exe' that's the driver's path
+#getting the dirver and then open the URL
+
+driver=webdriver.Chrome(r'D:\迅雷下载\chromedriver_win32 (1)\chromedriver.exe')
+driver.get('http:\\www.baidu.com')
+
+#if you want to get a new page in the same brower,quote the JS code is my way as followed.
+js='window.open("http:\\www.sina.com")'
+driver.execute_script(js)
