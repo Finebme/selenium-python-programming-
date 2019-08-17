@@ -1,0 +1,49 @@
+#all the method can be found on the selenium offical website https://www.seleniumhq.org
+
+#1. By ID, it will be invalid if the element has non-unique id on a page or is auto-generated.
+element = driver.find_element_by_id($ID)
+3or
+from selenium.webdriver.common.by import By
+element = driver.find_element(by=By.ID, value=$ID)
+
+#2 The same as By ID most part,but it will return mutiple results causes you won't expect 'people' just refers to one specific human being.
+cheeses = driver.find_elements_by_class_name($className)
+#or
+from selenium.webdriver.common.by import By
+cheeses = driver.find_elements(By.CLASS_NAME, $className)
+
+#3,4,5 to save the precious time,other similar method are all listed below
+#By Tag Name:The DOM Tag Name of the element.
+#By Name:Find the input element with matching name attribute.
+#By Link Text:Find the link element with matching visible text.
+frame = driver.find_element_by_tag_name($tagname)
+#OR
+from selenium.webdriver.common.by import By
+frame = driver.find_element(By.TAG_NAME, $tagname)
+
+frame = driver.find_element_by_tag_name(&name)
+#OR
+from selenium.webdriver.common.by import By
+frame = driver.find_element(By.TAG_NAME, $name)
+
+frame = driver.find_element_by_tag_name($linkText)
+#OR
+from selenium.webdriver.common.by import By
+frame = driver.find_element(By.TAG_NAME, $linkText)
+
+#6. CSS Selector~If a browser does not have native support for css queries, then Sizzle is used. IE 6,7 and FF3.0 currently use Sizzle as the css query engine.
+# use chrome and neglect the long upper sentence
+# sorry I choose to leave out CSS Selector,cause I suck at it anywhere.
+#7. Xpath
+# yeah,suck again.I suck, not the method ,to be clear.
+
+#8. JS the ultimate solution!!!maybe？I like this one.
+#cite from the offical:You can execute arbitrary javascript to find an element and as long as you return a DOM Element, it will be automatically converted to a WebElement object.
+#if jquery is loaded
+element = driver.execute_script("return $('.cheese')[0]")
+#here comes a complex one---Finding all the input elements for every label on a page:
+labels = driver.find_elements_by_tag_name("label")
+inputs = driver.execute_script(
+    "var labels = arguments[0], inputs = []; for (var i=0; i < labels.length; i++){" +
+    "inputs.push(document.getElementById(labels[i].getAttribute('for'))); } return inputs;", labels)
+    
