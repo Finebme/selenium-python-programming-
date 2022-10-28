@@ -5,3 +5,9 @@ the staging area is a file,generally contained in your Git directory,that stores
 3. commit. git stores that snapshot permanently to Git directory
 
 modified->staged->committed
+
+git config --global 
+git config (this affect a ceartain proj instead of global)
+
+config files exist in ./git and /{home}/.gitconfig
+
