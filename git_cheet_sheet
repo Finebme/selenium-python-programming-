@@ -23,3 +23,11 @@ git diff --cached    synonyms as --staged
 git remove 
 git remove -f  if it's already in the staging area.
 git remove --cached filename   tell the git no longer keep track the file,but you need it in your hardware. It's particularly useful when you accidentally staged it and forget to add it to .gitignore
+
+git log -p   show the patch
+git log -2    limits the entry to 2
+
+gg -> first line; shift+g -> last line;
+:1 -> first line; :$ -> last line
+
+git log --stat  show the statistic data
