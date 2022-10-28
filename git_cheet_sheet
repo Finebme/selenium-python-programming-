@@ -31,3 +31,24 @@ gg -> first line; shift+g -> last line;
 :1 -> first line; :$ -> last line
 
 git log --stat  show the statistic data
+git log --pretty=oneline
+git log --pretty=short/full/fuller
+git log --pretty=format:"%h - %an, %ar : %s"
+git log --pretty=format:"%h %an %ar: %s" --graph
+
+filter option
+git log --since=2.weeks
+git log --author=somebody
+git log --grep=somewordsinsubject
+git log -S stringinchangefiles
+git log -- path/to/file
+
+git log --pretty="%h - %s" --author='Juno C Hamano' --since="2008-10-01" --before="2008-11-01" --no-merges -- t
+
+"Oops,forgot to add a file" or "darn,fixing a typo in last commit"
+git commit --amend to avoid the sentence upward
+
+git reset HEAD file   unstaged a staged file
+git checkout -- file    withdrawed all the localchanges
+
+
