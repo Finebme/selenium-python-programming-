@@ -51,4 +51,12 @@ git commit --amend to avoid the sentence upward
 git reset HEAD file   unstaged a staged file
 git checkout -- file    withdrawed all the localchanges
 
+git restore --staged file
+git restore file
 
+restore uses to replace reset and checkout
+
+
+work with the remote
+git remote
+git remote -v   show both name and url
