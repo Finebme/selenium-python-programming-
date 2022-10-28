@@ -11,3 +11,5 @@ git config (this affect a ceartain proj instead of global)
 
 config files exist in ./git and /{home}/.gitconfig
 
+git help config
+git help add
