@@ -4,3 +4,4 @@ the staging area is a file,generally contained in your Git directory,that stores
 2. stage the changes to the staging area , which will be part of your next commit
 3. commit. git stores that snapshot permanently to Git directory
 
+modified->staged->committed
