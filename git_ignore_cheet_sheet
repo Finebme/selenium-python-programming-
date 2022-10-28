@@ -1,0 +1,14 @@
+# ignore all .a files
+*.a
+
+# but do track lib.a
+!lib.a
+
+#onliy ignore the TODO file in the current directory not subdir/TODO
+/TODO
+
+#ignore doc/notes.txt,but not doc/server/arch.txt
+doc/*.txt
+
+#ignore all .pdf files in the doc/ directory and any of its subdirectories
+doc/**/*.pdf
