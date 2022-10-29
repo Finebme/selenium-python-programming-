@@ -59,4 +59,9 @@ restore uses to replace reset and checkout
 
 work with the remote
 git remote
-git remote -v   show both name and url
+git remote -v   show all the remote ,both name and url
+git remote show origin   show origin detail
+
+git remote rename a b
+git remote add a a's url
+git remote remove a
