@@ -1,0 +1,8 @@
+a
+b
+<<<<<<< HEAD
+merge01
+=======
+merge02
+
+>>>>>>> merge02
