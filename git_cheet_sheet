@@ -65,3 +65,10 @@ git remote show origin   show origin detail
 git remote rename a b
 git remote add a a's url
 git remote remove a
+
+the tag thing,two types, never used it, pass today soorrry
+
+git checkout -b newbranch
+git switch -c newbranch
+these two both create a new branch and switch to it.
+
