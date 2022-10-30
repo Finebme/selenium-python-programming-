@@ -92,9 +92,21 @@ relate to remote branch
 
 git branch --all   show all the branches both local and remote
 
+git push localbranch origin branch
+add a new branch on remote server
+
 git push origin --delete old-branch-name
 delete certain remote branch
 
 git checkout -b branchname origin/branchname
 new a local branch to track the remote one
 
+git checkout hotfix
+git rebase master
+this makes the hofix to the same commit as the branch you are rebasing onto,works like merge but different in pointer,hard to describe,get some pics~
+
+rebase makes the log history linear-like and clean(that's what they call it) 
+
+merge VS rebase
+you would rather to keep a intact historical document ,which means stuff can be messy but intact as it is, or rebase to make it simple because people care about the work not the draft or messy script.
+So which one? Record of what actually happened or story of how your project was made.Tricky.
