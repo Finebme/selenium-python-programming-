@@ -82,3 +82,6 @@ git branch --merged
 git branch --no-merged
 filter the branch has been merged or no-merged 
 
+git branch --no-merged master
+show the branch which haven't been merged into the master
+
