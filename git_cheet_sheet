@@ -76,3 +76,9 @@ git merge bemerged
 gurantee that your branch's working tree is clean,which means commit already.Otherwise! suffer the consequence!
 
 git mergetool   you get a inner-file-comparator
+
+git branch -v   to see the last commit of each branch
+git branch --merged
+git branch --no-merged
+filter the branch has been merged or no-merged 
+
