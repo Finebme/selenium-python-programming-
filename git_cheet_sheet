@@ -95,3 +95,6 @@ git branch --all   show all the branches both local and remote
 git push origin --delete old-branch-name
 delete certain remote branch
 
+git checkout -b branchname origin/branchname
+new a local branch to track the remote one
+
