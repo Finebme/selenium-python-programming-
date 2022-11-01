@@ -73,7 +73,7 @@ git switch -c newbranch
 these two both create a new branch and switch to it.
 
 git merge bemerged
-gurantee that your branch's working tree is clean,which means commit already.Otherwise! suffer the consequence!
+guarantee that your branch's working tree is clean,which means commit already.Otherwise! suffer the consequence!
 
 git mergetool   you get a inner-file-comparator
 
