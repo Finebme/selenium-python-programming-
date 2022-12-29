@@ -16,6 +16,10 @@ git help config
 git help add
 
 .gitignore cat be mutiple,both activate in root path and subdirecories.
+*.[oa] ignore any files ending in ".o" or ".a"
+it is possible to have additional .gitignore files in subdirectories
+
+git status -s  you get a far more simplified output from the command
 
 git diff   compare working tree with the staged area
 git diff --staged    compare staged area with the last commit
