@@ -25,6 +25,8 @@ git diff   compare working tree with the staged area
 git diff --staged    compare staged area with the last commit
 git diff --cached    synonyms as --staged
 
+git difftool   use a tool like vimdiff to help view diffs
+
 git remove 
 git remove -f  if it's already in the staging area.
 git remove --cached filename   tell the git no longer keep track the file,but you need it in your hardware. It's particularly useful when you accidentally staged it and forget to add it to .gitignore
