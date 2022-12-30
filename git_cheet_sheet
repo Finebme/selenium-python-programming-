@@ -26,6 +26,7 @@ git diff --staged    compare staged area with the last commit
 git diff --cached    synonyms as --staged
 
 git difftool   use a tool like vimdiff to help view diffs
+git commit -v  show the diffs before commit
 
 git remove 
 git remove -f  if it's already in the staging area.
