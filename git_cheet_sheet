@@ -118,3 +118,7 @@ rebase makes the log history linear-like and clean(that's what they call it)
 merge VS rebase
 you would rather to keep a intact historical document ,which means stuff can be messy but intact as it is, or rebase to make it simple because people care about the work not the draft or messy script.
 So which one? Record of what actually happened or story of how your project was made.Tricky.
+
+git log --author=**  按照作者过滤日志
+git show ${commitSha512} --stat 查看某一次提交
+
